@@ -36,7 +36,6 @@ public class Concordance {
                     strCon.add(word);
                 }
             }
-
             }
 
         return strCon;
