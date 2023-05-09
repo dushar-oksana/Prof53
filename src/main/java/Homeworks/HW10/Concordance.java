@@ -3,22 +3,18 @@ package Homeworks.HW10;
 
 import java.util.LinkedHashSet;
 
-public class Concorance {
+public class Concordance {
     public static void main(String[] args) {
         String str = "one plus one equals one";
 
-        Word wordd = new Word("Hello");
-        wordd.addToPositions(0);
-        System.out.println(wordd);
-
-        Concorance concorance = new Concorance();
-        LinkedHashSet<Word> strConcorance = concorance.stringConcorance(str);
-        System.out.println(strConcorance);
+        Concordance concordance = new Concordance();
+        LinkedHashSet<Word> strConcordance = concordance.stringConcordance(str);
+        System.out.println(strConcordance);
 
     }
 
 
-    public LinkedHashSet<Word> stringConcorance(String str) {
+    public LinkedHashSet<Word> stringConcordance(String str) {
         String[] strArr = str.split(" ");
         LinkedHashSet<Word> strCon = new LinkedHashSet<>();
 

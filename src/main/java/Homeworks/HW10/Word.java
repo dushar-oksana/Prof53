@@ -16,28 +16,14 @@ public class Word {
         return word;
     }
 
-    public ArrayList<Integer> getPositions() {
-        return positions;
-    }
-
     public void addToPositions(Integer i) {
         positions.add(i);
     }
 
     @Override
     public String toString() {
-        return word + ':' + Arrays.toString(new ArrayList[]{positions});
+        return word + ':' + positions;
     }
-
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
-//
-//        Word word1 = (Word) o;
-//
-//        return word.equals(word1.word);
-//    }
 
     @Override
     public boolean equals(Object o) {
