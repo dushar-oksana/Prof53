@@ -6,6 +6,7 @@ public interface CustomDeque {
     void addFirst(int value); // добавление элемента в начало
     int getFirst(); // посмотреть первый элемент без удаления
     int removeFirst(); // получить первый элемент и удалить его из контейнера
+
     void addLast(int value);
     int getLast();
     int removeLast();
