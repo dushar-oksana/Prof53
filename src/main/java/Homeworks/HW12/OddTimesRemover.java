@@ -10,7 +10,6 @@ public class OddTimesRemover {
 
         System.out.println(remover(ourArray));
 
-
     }
 
     public static List<Integer> remover(int [] arr) {
@@ -35,5 +34,6 @@ public class OddTimesRemover {
         }
 
         return res;
+
     }
 }

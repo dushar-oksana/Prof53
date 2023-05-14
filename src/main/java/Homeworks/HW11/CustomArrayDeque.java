@@ -62,6 +62,7 @@ public class CustomArrayDeque implements CustomDeque {
 
         int firstElem = source[firstElementIndex];
         firstElementIndex = (firstElementIndex + 1) % source.length;
+
         size--;
 
         return firstElem;
@@ -90,7 +91,9 @@ public class CustomArrayDeque implements CustomDeque {
             throw new IndexOutOfBoundsException();
 
         int lastElem = source[(firstElementIndex + size()) % source.length];
+
         size--;
+
         return lastElem;
     }
 }
