@@ -9,8 +9,6 @@ public class OddTimesRemover {
         int [] ourArray = {1,2,3,1,4,3,2,3};
 
         System.out.println(remover(ourArray));
-
-
     }
 
     public static List<Integer> remover(int [] arr) {

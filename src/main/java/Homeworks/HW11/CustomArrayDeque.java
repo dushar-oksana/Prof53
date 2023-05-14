@@ -38,12 +38,14 @@ public class CustomArrayDeque implements CustomDeque {
     private void increaseCapacity() {
         int [] tempSource = new int[source.length * 2];
         int j = 0; // index in the array tempSource
+
         for (int i = firstElementIndex; i < source.length; i++) {
             tempSource[j++] = source[i];
         }
         for (int i = 0; i < firstElementIndex; i++) {
             tempSource[j++] = source[i];
         }
+
         firstElementIndex = 0;
         source = tempSource;
     }
@@ -91,6 +93,7 @@ public class CustomArrayDeque implements CustomDeque {
 
         int lastElem = source[(firstElementIndex + size()) % source.length];
         size--;
+
         return lastElem;
     }
 }
