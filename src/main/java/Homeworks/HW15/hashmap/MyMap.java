@@ -1,4 +1,4 @@
-package lesson15.hashmap;
+package Homeworks.HW15.hashmap;
 
 public interface MyMap {
     int size(); // количество пар

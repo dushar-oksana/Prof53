@@ -83,7 +83,7 @@ public class CustomArrayDeque implements CustomDeque {
         if (size() == 0)
             throw new IndexOutOfBoundsException();
 
-        return source[(firstElementIndex + size()) % source.length];
+        return source[(firstElementIndex + size() - 1) % source.length];
     }
 
     @Override
@@ -91,7 +91,7 @@ public class CustomArrayDeque implements CustomDeque {
         if (size() == 0)
             throw new IndexOutOfBoundsException();
 
-        int lastElem = source[(firstElementIndex + size()) % source.length];
+        int lastElem = source[(firstElementIndex + size() - 1) % source.length];
         size--;
 
         return lastElem;
